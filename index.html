@@ -4,37 +4,41 @@
 	<meta charset="UTF-8">
 	<title>2 Column CSS Demo - Equal Height Columns with Cross-Browser CSS</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="jquery-ui.css">
 </head>
 <body>
 
 	<header>
 		<h1>WikiMarkit</h1>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptatum.</h3>	
+		<h3>Welcome to WikiMarkit. Search Wikipedia on the left and Markit on Demand on the right.</h3> 
+		<h3>Please note, Markit's search only accepts stock symbols - notable ones include FB (Facebook), NKE (Nike), MSFT (Microsoft), AAPL (Apple), and GOOG (Alphabet Inc)</h3>	
 	</header>
 
 	<div id="wrapper">
 		<div id="container1">
 			<div id="column1">
-				<input id="wikisearch" name="search1" placeholder="Search Wiki...">
+				<input id="wikisearch" name="search1" placeholder="Search Wiki">
 				<button id='wiki-search'>Submit</button>
-				<h2>Lorem ipsum.</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
 				<div id="wiki-results"></div>
 			</div>
 		<div id="column2">
-			<input id="markitsearch" name="search2" placeholder="Search Markit on Demand...">
+			<input id="markitsearch" name="search2" placeholder="Search MoD with symbol">
 			<button id='markit-search'>Submit</button>
-			<h2>Lorem ipsum.</h2>
-			<p>Lorem ipsum dolor sit amet.</p>
-			<div id="markit-results"></div>
+			<ul id="markit-results"></ul>
+			<ul id="chartDemoContainer"></ul>
 		</div>
 	</div>
 </div>
 <footer>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, dignissimos!</p>
+	<p>The data is collated thanks to <a href="https://www.mediawiki.org/wiki/API:Main_page">Wikipedia</a>, <a href="http://dev.markitondemand.com/MODApis/">Markit on Demand</a>, and <a href="http://www.highcharts.com/">Highcharts</a></p>
 </footer>
 
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>  
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
 <script src="app.js"></script>
 <script src="markit.js"></script>
+<script src="chart.js"></script>
 </body>
