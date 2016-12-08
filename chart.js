@@ -20,7 +20,7 @@ Markit.TimeseriesService.prototype.PlotChart = function(){
                 symbol: this.symbol,
                 duration: this.duration
             },
-            url: "https://dev.markitondemand.com/Api/Timeseries/jsonp",
+            url: "http://dev.markitondemand.com/Api/Timeseries/jsonp",
             dataType: "jsonp",
             context: this,
             success: function(json){
@@ -142,7 +142,7 @@ Markit.TimeseriesService.prototype.PlotChart = function(){
                 symbol: this.symbol,
                 duration: this.duration
             },
-            url: "https://dev.markitondemand.com/Api/Timeseries/jsonp",
+            url: "http://dev.markitondemand.com/Api/Timeseries/jsonp",
             dataType: "jsonp",
             context: this,
             success: function(json){
